@@ -12,10 +12,15 @@
 .w-100{
     width: 100%;
 }
-.text-center   
-.text-align 
-.justify-y  
-.mx-auto 
+
+.text-center{
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .p-1{
     padding: 8px;
@@ -156,6 +161,7 @@ main{
 }
 
 .titulares{
+    text-align: center;
     font-size: 24px;
     width: 100%;
 }
