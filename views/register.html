@@ -67,13 +67,13 @@
         <form class="form-register" action="/" method="POST">
             <div class="dato-user">
                 <label for="nombre"></label>
-                <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
         
                 <label for="apellido"></label>
-                <input type="text" placeholder="Apellido" id="apellido" name="apellido">
+                <input type="text" placeholder="Apellido" id="apellido" name="apellido" required>
                 
                 <label for="usuario"></label>
-                <input type="text" placeholder="Nombre de usuario" id="usuario" name="usuario">
+                <input type="text" placeholder="Nombre de usuario" id="usuario" name="usuario" required>
             </div>
 
             <div class="fecha-nac">
@@ -83,54 +83,58 @@
                 <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
 
                 <label for="domicilio"></label>
-                <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio">
+                <input type="text" placeholder="Domicilio" id="domicilio" name="domicilio" required>
             </div>
 
             <div class="perfil-usuario">
-                <label for="perfil">Perfil del usuario:</label>
+                <label for="perfil">Perfil del Usuario:</label>
             </div>
             <div class="perfil-usuario-radio">
-                <input type="radio" id="comprar" name="perfil" value="comprar">
                 <label for="comprar">Comprar</label>
-
-                <input type="radio" id="vender" name="perfil" value="vender">
+                <input type="radio" id="comprar" name="perfil" value="comprar" required>
+            </div>
+            <div class="perfil-usuario-radio">
                 <label for="vender">Vender</label>
+                <input type="radio" id="vender" name="perfil" value="vender">
             </div>
 
             <div class="form-categorias">
                 <label for="categorias">Categorías de interés:</label>
             </div>
             <div class="form-categorias-ckeckbox">
-                <input type="checkbox" id="electro" name="categorias" value="electro">
                 <label for="electro">Electro</label>
+                <input type="checkbox" id="electro" name="categorias" value="electro" required>
             </div>
             <div div class="form-categorias-ckeckbox">
-                <input type="checkbox" id="moda" name="categorias" value="moda">
                 <label for="moda">Moda</label>
+                <input type="checkbox" id="moda" name="categorias" value="moda">
             </div>
             <div div class="form-categorias-ckeckbox">
-                <input type="checkbox" id="hogar" name="categorias" value="hogar">
                 <label for="hogar">Hogar</label>
+                <input type="checkbox" id="hogar" name="categorias" value="hogar">
             </div>
             <div div class="form-categorias-ckeckbox">
-                <input type="checkbox" id="juguetería" name="categorias" value="juguetería">
                 <label for="juguetería">Juguetería</label>
+                <input type="checkbox" id="juguetería" name="categorias" value="juguetería">
             </div>
             <div div class="form-categorias-ckeckbox">
-                <input type="checkbox" id="vida-sana" name="categorias" value="vida-sana">
                 <label for="vida-sana">Vida sana</label>
+                <input type="checkbox" id="vida-sana" name="categorias" value="vida-sana">
             </div>
         
             <div class="foto-usuario">
-                <label for="foto">Foto de usuario:</label>
+                <label for="foto">Foto de Usuario:</label>
+            </div>
+                <div>
                 <input type="file" id="foto" name="foto">
+                </div>
                 
                 <label for="contraseña"></label>
-                <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña">
+                <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" required>
                 
                 <label for="confirmar-contraseña"></label>
-                <input type="password" placeholder="Confirmar contraseña" id="confirmar-contraseña" name="confirmar-contraseña">
-            </div>
+                <input type="password" placeholder="Confirmar contraseña" id="confirmar-contraseña" name="confirmar-contraseña" required>
+          
 
             <div class="buttom-register">
                 <button class="btm-register" type="reset" >Borrar todos los datos</button>

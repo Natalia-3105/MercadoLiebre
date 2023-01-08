@@ -40,6 +40,10 @@
     margin-bottom: 10px;
 }
 
+.m-a{
+    margin: auto
+}
+
 .flex {
     display: flex;
 }
@@ -76,11 +80,17 @@
     font-size: 18px;
 }
 
+.main-header-top-bar{
+    text-align: center;
+    display: contents;
+}
+
 .primer-txt{
+    font-size: 100%;
+    width: 100%;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100%;
 }
 
 .main-navbar{
@@ -189,29 +199,57 @@ main{
     padding-top: 8px;
 }
 
+.form-register,
+.form-login{
+    text-align: center;
+    margin:  0 auto;
+}
+
+
 .form-register input,
 .form-login input{
-    width: 100%;
-    border-radius: 5px;
+    width: 50%;
+    border-radius: 10px;
     margin: 5px;
     padding: 5px;
 }
 
-.fecha-nac, 
-.perfil-usuario,
-.foto-usuario,
-.form-categorias{
+.fecha-nac,
+.form-categorias,
+.foto-usuario{
+    width: 100%;
+    text-align: center;
     font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.perfil-usuario{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.perfil-usuario-radio{
+    width: 100%;
+    text-align: center;
 }
 
 .perfil-usuario-radio input{
     width: auto;
+    text-align: center ;
+}
+
+.form-categorias-ckeckbox {
+    width: 100%;
+    text-align: center;
 }
 
 .form-categorias-ckeckbox input{
     width: auto;
+    text-align: center;
 } 
 
 .btm-register{
@@ -219,15 +257,17 @@ main{
     background-color: #1259c3;
     border-radius: 5px;
     padding: 5px;
+    margin-top: 8px;
 }
 
 .buttom-login{
-    text-align: center;
+   text-align: center;
 }
 
 .btm-login{
     border-radius: 3px;
-    padding: 2px;
+    padding: 5px;
+    margin-top: 8px;
 }
 
 .btm-login:hover{
@@ -265,7 +305,6 @@ main{
     .md-w-50 {
         width: 48%;
     }
-  
 }
 
 @media (min-width: 769px){
@@ -273,7 +312,25 @@ main{
     .lg-w-25 {
         width: 23%;
     }
-    
+
+    .main-header-top-bar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .logo{
+        width: 20%;
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    .primer-txt{
+        max-width: 350px;
+        text-align: right;
+    }
+
     .descripcion {
         display: none;
     }
